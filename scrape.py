@@ -52,18 +52,18 @@ def scrape_website_local(website):
                 # Try to use chromedriver from system PATH
                 driver = webdriver.Chrome(options=options)
             except Exception as driver_error:
-                                 return f"Chrome driver error: {str(driver_error)}. Please install Chrome and chromedriver."
-         
-         driver.get(website)
-         
-         # Wait for page to load
-         driver.implicitly_wait(3)
-         
-         html = driver.page_source
-         driver.quit()
-         
-         if len(html) < 100:
-             return f"Warning: Page content seems too short ({len(html)} chars). Check if page loaded correctly."
+                return f"Chrome driver error: {str(driver_error)}. Please install Chrome and chromedriver."
+        
+        driver.get(website)
+        
+        # Wait for page to load
+        driver.implicitly_wait(3)
+        
+        html = driver.page_source
+        driver.quit()
+        
+        if len(html) < 100:
+            return f"Warning: Page content seems too short ({len(html)} chars). Check if page loaded correctly."
         return html
         
     except Exception as e:
