@@ -2,6 +2,10 @@
 
 AI destekli web scraping uygulaması. Herhangi bir web sitesini tarayıp, AI ile istediğiniz bilgileri çıkarır.
 
+## 🌐 **Canlı Demo**
+
+**[🚀 Uygulamayı Deneyin](https://ai-webscraper-bksaugxfgbjmzwerprtr29.streamlit.app/)**
+
 ## ⚡ Hızlı Başlangıç
 
 ### 1. Groq API Key Alın (Ücretsiz)
